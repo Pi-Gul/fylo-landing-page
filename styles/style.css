@@ -86,21 +86,20 @@ input {
 }
 
 .header-nav {
-  display: grid;
-  justify-items: end;
+
 }
 
 .header-nav ul {
-  width: 70%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 15% 15% 15%;
   font-size: 0.9rem;
   justify-items: end;
+  justify-content: end;
 }
 
 .header-nav li {
   display: inline-block;
-  padding-left: 3%;
 }
 
 /* Section 1 */
@@ -294,6 +293,9 @@ input {
 }
 
 @media only screen and (min-width: 800px) {
+  body {
+    width: 75%;
+  }
   .s1, .s2, .s3 {
     display: grid;
     grid-template: 1fr / 4fr 3fr;
@@ -305,6 +307,10 @@ input {
   }
   .section-right {
     grid-column: 2 / span 1;
+  }
+  /* Header */
+  .header-nav li {
+
   }
   /* Section 1 */
   .section.s1 {
@@ -364,8 +370,9 @@ input {
     height: 40px;
   }
   .section.s3 .button {
-    width: 45%;
+    width: 50%;
     margin: 0px 0px;
+    font-size: 0.6rem;
   }
   /* Section 4 */
   .section.s4 {
@@ -379,9 +386,10 @@ input {
   }
   .section.s4 .contact-info {
     margin: 0px 0px;
-    padding: 3%;
+    padding: 0px 0px;
   }
   .section.s4 ul {
     margin: 0px 0px;
+    padding: 0px 0px;
   }
 }
