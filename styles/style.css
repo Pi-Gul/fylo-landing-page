@@ -58,7 +58,7 @@ input {
 
 .curve-mobile {
   display: block;
-  max-width: 100%;
+  width: 100%;
   margin: 0px;
   padding: 0px;
 }
@@ -140,7 +140,7 @@ input {
 
 .section.s2 {
   padding: 10% 7% 30% 7%;
-  background-color: hsl(240, 75%, 98%);
+  background-color: hsl(240, 45%, 98%);
 }
 
 .section.s2 h1 {
@@ -294,11 +294,11 @@ input {
 
 @media only screen and (min-width: 800px) {
   body {
-    width: 75%;
+    width: 70%;
   }
   .s1, .s2, .s3 {
     display: grid;
-    grid-template: 1fr / 4fr 3fr;
+    grid-template: 1fr / 5fr 4fr;
     grid-auto-flow: dense;
     align-items: center;
   }
@@ -308,43 +308,47 @@ input {
   .section-right {
     grid-column: 2 / span 1;
   }
+  .section.s1 h1, .section.s2 h1 {
+    font-size: 2.1rem;
+    text-align: left;
+  }
+  .section.s1 p, .section.s2 p {
+    font-size: 1.1rem;
+    text-align: left;
+  }
   /* Header */
   .header-nav li {
 
   }
   /* Section 1 */
   .section.s1 {
-    padding: 10% 5% 10% 5%;   
+    padding: 10% 5% 10% 5%;  
   }
-  .section.s1 h1 {
-
-    font-size: 1.6rem;
-    text-align: left;
-  }
-  .section.s1 p {
-    font-size: 1rem;
-    text-align: left;
+  .section.s1 .section-left {
+    padding-right: 10%;
   }
   .section.s1 .email-form {
     display: grid;
+    width: 90%;
     grid-template-columns: 3fr 2fr;
     grid-column-gap: 3px;
     align-items: center;
+    justify-items: start;
   }
   .section.s1 input{
     height: 40px;
+    font-size: 0.7rem;
   }
   /* Section 2 */
   .section.s2 {
-    padding: 10% 7% 20% 7%;
+    padding: 10% 4% 20% 7%;
   }
-  .section.s2 h1 {
-    font-size: 1.6rem;
-    text-align: left;
+  .section.s2 .section-left {
+    padding-right: 6%;
   }
   .section.s2 p {
-    font-size: 1rem;
-    text-align: left;
+    width: 80%;
+    font-size: 0.9rem;
   }
   .section.s2 .see-link {
   justify-items: center;
@@ -357,12 +361,18 @@ input {
   .section.s3 {
     padding: 8% 7% 8% 7%;
   }
+  .section.s3 .section-left {
+    padding-right: 25%;
+  }
+  .section.s3 .section-right {
+    padding-left: 10%;
+  }
   .section.s3 h1 {
     font-size: 1.6rem;
     text-align: left;
   }
   .section.s3 p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: left;
   }
   .section.s3 input{
